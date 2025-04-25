@@ -1,4 +1,5 @@
 package com.security.demo.service;
+
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
@@ -22,6 +23,7 @@ public class JwtService {
 
     /**
      * JWT token oluşturur.
+     *
      * @param username Kullanıcı adı
      * @return Oluşturulan JWT token
      */
@@ -36,6 +38,7 @@ public class JwtService {
 
     /**
      * Token'ı doğrulamak ve claim'leri almak için kullanılır.
+     *
      * @param token JWT token
      * @return Token içindeki claim'ler (veriler)
      */
@@ -49,6 +52,7 @@ public class JwtService {
 
     /**
      * Token'ı doğrular ve geçerliliğini kontrol eder.
+     *
      * @param token JWT token
      * @return Token geçerliyse true, geçersizse false
      */
@@ -58,6 +62,7 @@ public class JwtService {
 
     /**
      * Token'dan kullanıcı adı alır.
+     *
      * @param token JWT token
      * @return Kullanıcı adı
      */
@@ -67,6 +72,7 @@ public class JwtService {
 
     /**
      * Secret key'i döndürür.
+     *
      * @return Secret key
      */
     private SecretKey getSignInKey() {

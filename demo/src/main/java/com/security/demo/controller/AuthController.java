@@ -5,7 +5,10 @@ import com.security.demo.dto.AuthenticationResponse;
 import com.security.demo.dto.RegisterRequest;
 import com.security.demo.service.AuthenticationService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Kullanıcı giriş ve kayıt işlemleri için uç noktalar.
